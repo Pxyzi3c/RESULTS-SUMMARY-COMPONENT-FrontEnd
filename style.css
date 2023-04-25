@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: -1px 14px 21px -13px rgba(61, 61, 61, 0.43);
+}
+
+.left {
+    border-radius: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    text-align: center;
+    color: white;
+    background: linear-gradient(0deg, rgba(0,61,185,1) 0%, rgba(130,0,255,1) 100%); 
+}
+
+.left > h3 {
+    opacity: .9;
+    font-weight: 500;
+}
+
+.left .result {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lime;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(0, 53, 158, 0.801) 0%, rgba(132, 0, 255, 0.123) 100%); 
+}
+
+.left .result h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.left .result p {
+    opacity: .7;
+}
+
+.left .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.left .text h2 {
+    font-weight: 500;
+}
+
+.left .text p {
+    font-weight: 300;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.right button {
+    padding: 1rem;
+    background-color: rgb(31, 31, 75);
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.right button:focus {
+    background: linear-gradient(0deg, rgba(0,61,185,1) 0%, rgba(130,0,255,1) 100%); 
+}
+
+ .right button:hover {
+    background: linear-gradient(0deg, rgba(0,61,185,1) 0%, rgba(130,0,255,1) 100%); 
+}
+
+.right ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.right ul li {
+    padding: 1rem;
+    background-color: rgba(255, 220, 220, 0.164);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right ul li .label {
+    display: flex;
+    gap: 1rem;
+}
+
+.right ul li .label.reaction {
+    color: rgb(207, 30, 30);
+}
+
+.right ul li .label.memory {
+    color: rgb(255, 153, 0);
+}
+
+.right ul li .label.verbal {
+    color: rgb(0, 167, 153);
+}
+
+.right ul li .label.visual {
+    color: rgb(76, 0, 255);
+}
+
+.data {
+    display: flex;
+}
+
+.data .overall-score{
+    opacity: .5;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .left, .right {
+        width: 89%;
+    }
+}
